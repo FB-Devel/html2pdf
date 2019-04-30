@@ -1,0 +1,13 @@
+{
+    "name": "root/html2pdf",
+    "authors": [
+        {
+            "name": "FB-Devel",
+            "email": "fabio.benedetti@iit.cnr.it"
+        }
+    ],
+    "require": {
+        "spipu/html2pdf": "^5.2",
+	"grabzit/grabzit":"3.3.0.2"
+    }
+}
