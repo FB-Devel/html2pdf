@@ -6,7 +6,7 @@
     // GRABZIT ACCESS
     $client = "ZWY1ZWFmZjRjNzIxNGNhMDg2YTRjODc5ZmYyZmE5N2M=";
     $secret = "LD8/Gz8/YR8/GjAuP2NPZQJtUT8/KxwkJD8/Pz8/Pz8=";
-    // GET HTTP RESPONSES WITH DESCRITIONS
+    // GET HTTP RESPONSES WITH DESCRIPTIONS
     $codes = unserialize(file_get_contents("http://fabio-pc.nic.it/http-responses/"));
 
 
