@@ -4,12 +4,8 @@
     include(__DIR__."/vendor/grabzit/grabzit/lib/GrabzItClient.php");
     
     // GRABZIT ACCESS
-    $client = "ZWY1ZWFmZjRjNzIxNGNhMDg2YTRjODc5ZmYyZmE5N2M=";
-    $secret = "LD8/Gz8/YR8/GjAuP2NPZQJtUT8/KxwkJD8/Pz8/Pz8=";
-    // GET HTTP RESPONSES WITH DESCRIPTIONS
-    $codes = unserialize(file_get_contents("http://fabio-pc.nic.it/http-responses/"));
-
-
+    $client = "ZWFlZThkODUxNDJjNDIzZWEyYTY5ZTRhZTg4ZDRmMDI=";
+    $secret = "bkM/Py0/Pz9lPz9NeD9AP0MrMT8/PzAZfk9jXz9uPxo";
 
     // RUN FOR FIRST TIME AND CRATE MISSED FILE
     $list = "sites-list";
