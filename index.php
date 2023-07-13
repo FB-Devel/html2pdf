@@ -56,7 +56,7 @@
     $scandir = scandir("output");
     echo "<h2>FILES</h2><ul>";
     foreach($scandir as $file){
-        if($file != '.' && $file != '..'){
+        if($file != '.' && $file != '..' && $file != '.keep'){
             print_r("<li><a href='output/".$file."' target='_blank'>".$file."</a></li>");
         }
     }
