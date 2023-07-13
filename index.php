@@ -4,8 +4,7 @@
     include(__DIR__."/vendor/grabzit/grabzit/lib/GrabzItClient.php");
     
     // GRABZIT ACCESS
-    $client = "ZWFlZThkODUxNDJjNDIzZWEyYTY5ZTRhZTg4ZDRmMDI=";
-    $secret = "bkM/Py0/Pz9lPz9NeD9AP0MrMT8/PzAZfk9jXz9uPxo";
+    $config = parse_ini_file('config.ini', true);
 
     // RUN FOR FIRST TIME AND CRATE MISSED FILE
     $list = "sites-list";
@@ -16,7 +15,7 @@
     foreach($l as $site){
         $s = @get_headers("http://".$site);
         if(preg_match('/.* (200|201|202|203|204|205|206|300|301|302|303|304|305|306|307) .*/', $s[0])){
-            $grabzIt = new \GrabzIt\GrabzItClient($client, $secret);
+            $grabzIt = new \GrabzIt\GrabzItClient($config['GrabzIt']['key'], $config['GrabzIt']['secret']);
             $grabzIt->URLToPDF($site);
             $grabzIt->SaveTo("output/".$site.".pdf");
         } else{
